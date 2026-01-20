@@ -39,3 +39,7 @@ Thumbs.db
 # Credentials
 .env.local
 .env.*.local
+
+# Original source files (minified versions used)
+script.js
+styles.css

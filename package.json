@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-v2",
+  "version": "1.0.0",
+  "description": "Portfolio project",
+  "scripts": {
+    "minify": "terser script.js -o script.min.js && cleancss styles.css -o styles.min.css"
+  },
+  "devDependencies": {
+    "terser": "^5.27.0",
+    "clean-css-cli": "^5.6.3"
+  }
+}
