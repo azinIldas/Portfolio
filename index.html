@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azin Ildas - Portfolio</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- WICHTIG: Tailwind Dark Mode Konfiguration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class', // Sagt Tailwind, dass es auf die .dark-Klasse im <html>-Tag achten soll
+            theme: {
+                extend: {}
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Eigene Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Das <body>-Tag bekommt die Dark-Mode-Klassen (ohne bg-gray-900) -->
+<body class="text-gray-800 antialiased dark:text-gray-300">
+
+    <!-- Header / Navigation -->
+    <!-- Alle Elemente hier haben jetzt dark: Varianten -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-md border-b border-gray-200 dark:bg-gray-900/70 dark:border-gray-700">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo (inspiriert vom Screenshot) -->
+            <a href="#home" class="text-2xl font-bold font-serif-display text-gray-900 dark:text-white">*AI</a>
+            
+            <!-- Right Side: Nav Links & Toggle -->
+            <div class="flex items-center">
+                <!-- Navigationslinks -->
+                <div class="space-x-6 md:space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white">Start</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white">Über Mich</a>
+                    <a href="#projects" class="text-gray-600 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white">Meine Projekte</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors dark:text-gray-400 dark:hover:text-white">Kontakt</a>
+                </div>
+
+                <!-- Dark Mode Toggle Button -->
+                <button id="theme-toggle" type="button" class="ml-6 p-2 rounded-full text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 dark:text-gray-400 dark:hover:text-white">
+                    <!-- Moon Icon (wird im Light Mode angezeigt) -->
+                    <svg id="theme-icon-moon" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                    <!-- Sun Icon (KORRIGIERT) -->
+                    <svg id="theme-icon-sun" class="h-5 w-5 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-6.364-.386l1.591-1.591M3 12h2.25m.386-6.364l1.591 1.591M12 12a2.25 2.25 0 00-2.25 2.25v.01c0 .317.062.623.18.904a2.25 2.25 0 004.14 0c.118-.281.18-.587.18-.904v-.01a2.25 2.25 0 00-2.25-2.25z" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-16"> <!-- Padding-Top, um Inhalt unter den fixierten Header zu schieben -->
+
+        <!-- Sektion 1: Hero (Start) -->
+        <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center pt-16 pb-20 px-6">
+            <!-- Stern-Symbol (inspiriert vom Screenshot) -->
+            <div class="text-5xl font-serif-display text-gray-900 mb-4 dark:text-gray-100">*</div>
+            
+            <!-- Bild-Bogen -->
+            <div class="hero-arch mb-6 dark:bg-gray-800">
+                <img id="heroImage" src="pictures/azin.jpeg" alt="Profilbild von Azin Ildas">
+            </div>
+
+            <!-- Bild-Upload-Button -->
+          
+            
+            <!-- Name -->
+            <h1 id="heroName" class="text-6xl md:text-8xl font-serif-display font-bold text-gray-900 mb-4 dark:text-white">
+                <!-- Wird per JS geladen -->
+            </h1>
+            
+            <!-- Subtitel -->
+            <p id="heroSubtitle" class="text-xl md:text-2xl text-gray-600 dark:text-gray-400">
+                <!-- Wird per JS geladen -->
+            </p>
+        </section>
+
+        <!-- Sektion 2: Über Mich & Skills -->
+        <section id="about" class="py-20 bg-white border-t border-b border-gray-100 dark:bg-gray-800 dark:border-gray-700">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-4xl font-bold font-serif-display text-center mb-12 dark:text-white">Über Mich</h2>
+                
+                <div class="text-lg text-gray-700 space-y-4 leading-relaxed dark:text-gray-300">
+                    <p id="aboutText1"><!-- Wird per JS geladen --></p>
+                    <p id="aboutText2"><!-- Wird per JS geladen --></p>
+                    <p id="aboutText3"><!-- Wird per JS geladen --></p>
+                </div>
+
+                <h3 class="text-3xl font-bold font-serif-display text-center mt-16 mb-8 dark:text-white">Technologien</h3>
+                <!-- Skills-Liste -->
+                <div id="skillsList" class="flex flex-wrap justify-center gap-3">
+                    <!-- Wird per JS geladen -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sektion 3: Kontakt -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-4xl font-bold font-serif-display text-center mb-12 dark:text-white">Kontakt</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    
+                    <!-- Kontaktformular -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 dark:text-white">Schreib mir eine Nachricht</h3>
+                        <form id="contactForm" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-300">Name</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-gray-800 focus:border-gray-800 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-300">E-Mail</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-gray-800 focus:border-gray-800 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-300">Nachricht</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-gray-800 focus:border-gray-800 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full bg-gray-900 text-white py-3 px-6 rounded-lg font-medium shadow-lg hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-offset-2 dark:bg-gray-200 dark:text-gray-900 dark:hover:bg-white dark:focus:ring-gray-400">
+                                    Senden
+                                </button>
+                            </div>
+                        </form>
+                        <!-- Erfolgsmeldung (versteckt) -->
+                        <div id="formSuccess" class="hidden mt-4 p-4 rounded-lg bg-green-100 text-green-800 border border-green-200 dark:bg-green-900 dark:text-green-100 dark:border-green-800">
+                            Danke! Deine Nachricht wurde (simuliert) gesendet. Im echten Betrieb wäre sie jetzt auf dem Weg zu mir.
+                        </div>
+                    </div>
+                    
+                    <!-- Kontaktlinks -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 dark:text-white">Andere Wege</h3>
+                        <div id="contactLinks" class="space-y-4">
+                            <!-- Wird per JS geladen -->
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-100 border-t border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+        <div class="container mx-auto px-6 text-center text-gray-600 dark:text-gray-400">
+            <p>&copy; <span id="footerYear"></span> <span id="footerName"></span>. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <!-- Eigenes Skript -->
+    <script src="script.js"></script>
+</body>
+</html>

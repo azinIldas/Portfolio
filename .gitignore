@@ -1,0 +1,41 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Node
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.env
+
+# Build
+dist/
+build/
+
+# Logs
+logs/
+*.log
+
+# Mac
+*.DS_Store
+
+# Windows
+Thumbs.db
+
+# Credentials
+.env.local
+.env.*.local

@@ -1,0 +1,23 @@
+{
+    "hero": {
+        "name": "Azin Ildas",
+        "subtitle": "Informatiker Applikationsentwickler"
+    },
+    "about": {
+        "p1": "Hallo! Ich bin Azin, ein leidenschaftlicher Applikationsentwickler. Ich entwickle verschiedenes Zeug und liebe es, komplexe Probleme in elegante, funktionierende Lösungen zu verwandeln.",
+        "p2": "Ich habe Erfahrungen in verschiedensten Technologien gesammelt. Neben meiner Entwicklungstätigkeit arbeite ich bei der Gemeinde Suhr und Gränichen als Teamleiter und führe dort ein kleines Team von 2-5 Leuten.",
+        "p3": "Wenn ich nicht gerade code, findest du mich beim Fitness oder bei allem, was mit Autos zu tun hat."
+    },
+    "skills": [
+        "HTML", "CSS", "JavaScript", "TypeScript", "PHP", "Jquery", 
+        "Lit", "Tailwind"
+    ],
+    "contact": {
+        "linkedin": "https://www.linkedin.com/in/azin-ildas-928b0b273/",
+        "email_private": "a.ildas@m2apla.ch",
+        "email_business": "azin4222@gmail.com"
+    },
+    "footer": {
+        "name": "Azin Ildas"
+    }
+}
