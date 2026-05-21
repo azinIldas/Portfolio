@@ -1,6 +1,4 @@
-/* ==========================================================
-   Portfolio V2 - Custom Styles
-   ========================================================== */
+/* === Basis / Theme === */
 
 body {
     font-family: 'Inter', sans-serif;
@@ -18,7 +16,8 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-/* --- Hero Bogen / Profilbild --- */
+/* === Hero (Profilbild im Bogen) === */
+
 .hero-arch {
     position: relative;
     width: 300px;
@@ -37,16 +36,15 @@ body {
     object-fit: cover;
 }
 
-/* --- Icons (Kontakt-Sektion) --- */
+/* === Kontakt-Icons === */
+
 .icon {
     width: 24px;
     height: 24px;
     stroke-width: 2;
 }
 
-/* ==========================================================
-   Projekte – Card Grid
-   ========================================================== */
+/* === Projekte – Card Grid === */
 
 .projects-grid {
     display: grid;
@@ -184,6 +182,8 @@ body {
     margin-top: 1.25rem;
 }
 
+/* === Buttons === */
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -246,9 +246,7 @@ body {
     background-color: #1f2937;
 }
 
-/* ==========================================================
-   Skills – Kategorien
-   ========================================================== */
+/* === Skills – Kategorien === */
 
 .skills-categories {
     display: grid;
@@ -316,9 +314,7 @@ body {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
-/* ==========================================================
-   Schulprojekte – Toggle / Accordion
-   ========================================================== */
+/* === Schulprojekte – Toggle / Accordion === */
 
 .school-toggle {
     display: inline-flex;
@@ -377,9 +373,7 @@ body {
     margin-top: 2.5rem;
 }
 
-/* ==========================================================
-   Aktuelle Projekte – Empty State
-   ========================================================== */
+/* === Aktuelle Projekte – Empty State === */
 
 .current-projects-empty {
     text-align: center;
@@ -396,9 +390,7 @@ body {
     background-color: rgba(17, 24, 39, 0.5);
 }
 
-/* ==========================================================
-   Projekt-Untertitel innerhalb der Section
-   ========================================================== */
+/* === Projects-Subheadings === */
 
 .projects-subheading {
     font-family: 'Playfair Display', serif;
@@ -426,9 +418,7 @@ body {
     color: #9ca3af;
 }
 
-/* ==========================================================
-   Video-Modal (Lightbox-Player)
-   ========================================================== */
+/* === Video-Modal === */
 
 .video-modal {
     position: fixed;
