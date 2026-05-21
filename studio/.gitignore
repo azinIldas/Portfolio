@@ -1,0 +1,16 @@
+# Sanity / Node
+node_modules
+dist
+.sanity
+.env
+.env.local
+.env.development
+.env.production
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea
+.vscode

@@ -9,13 +9,65 @@
         "p3": "Wenn ich nicht gerade code, findest du mich beim Fitness oder bei allem, was mit Autos zu tun hat."
     },
     "skills": [
-        "HTML", "CSS", "JavaScript", "TypeScript", "PHP", "Jquery", 
-        "Lit", "Tailwind"
+        {
+            "category": "Frontend",
+            "items": ["JavaScript", "TypeScript", "HTML", "CSS", "Tailwind CSS"]
+        },
+        {
+            "category": "Backend",
+            "items": ["Python", "FastAPI", "Django", "Alembic", "PHP"]
+        },
+        {
+            "category": "Infrastruktur & DevOps",
+            "items": ["Docker", "Traefik", "Linux Server", "NUCs"]
+        },
+        {
+            "category": "Security",
+            "items": ["JWT", "Fail2Ban", "Rate Limiting"]
+        }
+    ],
+    "currentProjects": [],
+    "schoolProjects": [
+        {
+            "title": "Ski Service Management",
+            "subtitle": "Jetstream Management",
+            "description": "Eine Open-Source-Verwaltungs-Homepage für Ski-Geschäfte mit einfacher Bedienung und effektiver Kundenbetreuung. Die Landingpage bietet eine nutzerfreundliche Oberfläche für das einfache Erfassen von Bestellungen, welche direkt in die SQL-Datenbank einfließen.",
+            "image": "Jetstream.png",
+            "tags": ["C#", "SQL", "Frontend", "Backend"],
+            "github": "https://github.com/azinIldas/Ski-Service-Management",
+            "demo": "https://azinildas.github.io/Ski-Service-Management/Front-end/index.html"
+        },
+        {
+            "title": "Schere Stein Papier",
+            "subtitle": "Klassiker mit Bot",
+            "description": "Ein einfaches, aber unterhaltsames Schere-Stein-Papier-Spiel, das Logik und Zufall kombiniert. Sie wählen zwischen Schere, Stein und Papier und treten gegen den Computer an. Ein beliebter Zeitvertreib, der Entscheidungsfindung und strategisches Denken fördert.",
+            "image": "ssp.png",
+            "tags": ["JavaScript", "HTML", "CSS"],
+            "github": "https://github.com/azinIldas/SchereSteinPapier",
+            "demo": "https://azinildas.github.io/SchereSteinPapier/"
+        },
+        {
+            "title": "Tic Tac Toe",
+            "subtitle": "Strategiespiel für Zwei",
+            "description": "Tic Tac Toe ist ein einfaches Strategiespiel, das Sie zu zweit spielen können. Es gewinnt der Spieler, der zuerst drei seiner Symbole in einer Reihe anordnet. Gelingt dies keinem der beiden Spieler, endet die Partie unentschieden.",
+            "image": "ttt.png",
+            "tags": ["JavaScript", "HTML", "CSS"],
+            "github": "https://github.com/azinIldas/TikTakToe",
+            "demo": "https://azinildas.github.io/TikTakToe/"
+        },
+        {
+            "title": "Snake MiniGame",
+            "subtitle": "Der Arcade-Klassiker",
+            "description": "Das klassische Snake Spiel. Steuern Sie eine Schlange, die mit jedem aufgesammelten roten Punkt länger wird. Sammeln Sie so viele Punkte wie möglich, ohne dass die Schlange die Wände oder ihren eigenen Schwanz berührt.",
+            "image": "snake.png",
+            "tags": ["JavaScript", "HTML", "Canvas"],
+            "github": "https://github.com/azinIldas/SnakeMiniGame",
+            "demo": "https://azinildas.github.io/SnakeMiniGame/"
+        }
     ],
     "contact": {
         "linkedin": "https://www.linkedin.com/in/azin-ildas-928b0b273/",
-        "email_private": "a.ildas@m2apla.ch",
-        "email_business": "azin4222@gmail.com"
+        "email_private": "a.ildas@m2apla.ch"
     },
     "footer": {
         "name": "Azin Ildas"

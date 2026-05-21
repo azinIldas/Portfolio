@@ -40,6 +40,12 @@ Thumbs.db
 .env.local
 .env.*.local
 
-# Original source files (minified versions used)
-script.js
-styles.css
+# Build artifacts (regenerate with `npm run minify`)
+script.min.js
+styles.min.css
+
+# Lokale Video-Datei(en) – GitHub hat 100 MB Limit pro Datei.
+# Für's Web wird YouTube/Vimeo via Sanity-Link genutzt.
+videos/
+*.mp4
+*.mov

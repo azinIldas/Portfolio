@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     
     <!-- Eigene Styles -->
-    <link rel="stylesheet" href="styles.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <!-- Das <body>-Tag bekommt die Dark-Mode-Klassen (ohne bg-gray-900) -->
 <body class="text-gray-800 antialiased dark:text-gray-300">
@@ -71,11 +71,8 @@
             
             <!-- Bild-Bogen -->
             <div class="hero-arch mb-6 dark:bg-gray-800">
-                <img id="heroImage" src="pictures/azin.jpeg" alt="Profilbild von Azin Ildas">
+                <img id="heroImage" src="pictures/azin.png" alt="Profilbild von Azin Ildas">
             </div>
-
-            <!-- Bild-Upload-Button -->
-          
             
             <!-- Name -->
             <h1 id="heroName" class="text-6xl md:text-8xl font-serif-display font-bold text-gray-900 mb-4 dark:text-white">
@@ -100,8 +97,8 @@
                 </div>
 
                 <h3 class="text-3xl font-bold font-serif-display text-center mt-16 mb-8 dark:text-white">Technologien</h3>
-                <!-- Skills-Liste -->
-                <div id="skillsList" class="flex flex-wrap justify-center gap-3">
+                <!-- Skills-Liste (gruppiert nach Kategorien) -->
+                <div id="skillsList" class="skills-categories">
                     <!-- Wird per JS geladen -->
                 </div>
             </div>
@@ -109,9 +106,41 @@
         
         <!-- Sektion 2.5: Projekte -->
         <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-900">
-            <div class="container mx-auto px-6 max-w-4xl">
-                <h2 class="text-4xl font-bold font-serif-display text-center mb-12 dark:text-white">Meine Projekte</h2>
-                <p class="text-center text-gray-600 dark:text-gray-400">Hier kommen bald meine Projekte hin.</p>
+            <div class="container mx-auto px-6 max-w-6xl">
+                <h2 class="text-4xl font-bold font-serif-display text-center mb-4 dark:text-white">Meine Projekte</h2>
+                <p class="text-center text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-16">
+                    Eine Auswahl an Projekten, an denen ich gearbeitet habe – vom kleinen Browser-Spiel bis zur kompletten Verwaltungs-Anwendung.
+                </p>
+
+                <!-- Aktuelle Projekte (z. B. via Sanity CMS gefüllt) -->
+                <h3 class="projects-subheading">Aktuelle Projekte</h3>
+                <p class="projects-subheading-note">Projekte, an denen ich gerade arbeite oder die ich kürzlich fertiggestellt habe.</p>
+
+                <div id="currentProjectsGrid" class="projects-grid">
+                    <!-- Wird per JS geladen -->
+                </div>
+                <div id="currentProjectsEmpty" class="current-projects-empty">
+                    <p class="text-base">Hier ist gerade noch nichts veröffentlicht – schau bald wieder vorbei!</p>
+                </div>
+
+                <!-- Schulprojekte – zugeklappt -->
+                <div class="mt-20 text-center">
+                    <button id="schoolProjectsToggle" type="button" class="school-toggle"
+                        aria-expanded="false" aria-controls="schoolProjectsWrapper">
+                        <span class="toggle-label">Schulprojekte ansehen</span>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+
+                <div id="schoolProjectsWrapper" class="school-projects-wrapper">
+                    <div id="schoolProjectsGrid" class="projects-grid">
+                        <!-- Wird per JS geladen -->
+                    </div>
+                </div>
             </div>
         </section>
         
@@ -146,7 +175,11 @@
                         </form>
                         <!-- Erfolgsmeldung (versteckt) -->
                         <div id="formSuccess" class="hidden mt-4 p-4 rounded-lg bg-green-100 text-green-800 border border-green-200 dark:bg-green-900 dark:text-green-100 dark:border-green-800">
-                            Danke! Deine Nachricht wurde (simuliert) gesendet. Im echten Betrieb wäre sie jetzt auf dem Weg zu mir.
+                            Danke! Deine Nachricht wurde gesendet – ich melde mich so schnell wie möglich.
+                        </div>
+                        <!-- Fehlermeldung (versteckt) -->
+                        <div id="formError" class="hidden mt-4 p-4 rounded-lg bg-red-100 text-red-800 border border-red-200 dark:bg-red-900 dark:text-red-100 dark:border-red-800">
+                            <!-- Wird per JS gefüllt -->
                         </div>
                     </div>
                     
@@ -171,7 +204,18 @@
         </div>
     </footer>
 
+    <!-- Video-Modal (wird beim Klick auf "Video ansehen" geöffnet) -->
+    <div id="videoModal" class="video-modal hidden" role="dialog" aria-modal="true" aria-label="Video">
+        <div class="video-modal-backdrop" data-close-video></div>
+        <div class="video-modal-content">
+            <button type="button" class="video-modal-close" data-close-video aria-label="Schließen">&times;</button>
+            <div class="video-modal-frame" id="videoModalFrame">
+                <!-- Wird per JS gefüllt -->
+            </div>
+        </div>
+    </div>
+
     <!-- Eigenes Skript -->
-    <script src="script.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
